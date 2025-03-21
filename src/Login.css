@@ -1,0 +1,118 @@
+/* import poppins fonr */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  .container {
+    display: flex;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .left, .right {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc
+  }
+  
+  .password-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .toggle-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .submit-btn {
+    background: #ff5733;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #e04e2a;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .right {
+      padding: 20px;
+    }
+  }
+  
+
+    button  img {
+    height: 20px;
+    width: 20px;
+  }
